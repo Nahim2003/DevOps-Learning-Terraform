@@ -1,0 +1,24 @@
+#cloud-config
+package_update: true
+package_upgrade: true
+packages:
+  - apache2
+  - mysql-server
+  - php
+  - php-mysql
+  - libapache2-mod-php
+  - wget
+  - unzip
+
+runcmd:
+  - systemctl enable apache2
+  - systemctl start apache2
+  - systemctl enable mysql
+  - systemctl start mysql
+  - cd /tmp
+  - wget https://wordpress.org/latest.zip
+  - unzip latest.zip
+  - cp -r wordpress/* /var/www/html/
+  - chown -R www-data:www-data /var/www/html/
+  - chmod -R 755 /var/www/html/
+  - rm -rf /var/www/html/index.html /tmp/wordpress /tmp/latest.zip
