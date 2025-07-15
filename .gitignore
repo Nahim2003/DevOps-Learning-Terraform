@@ -1,8 +1,6 @@
-# Terraform
+# Ignore Terraform artifacts
 .terraform/
 *.tfstate
 *.tfstate.*
 .terraform.lock.hcl
 terraform.tfvars
-crash.log
-*.log
