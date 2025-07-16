@@ -68,24 +68,3 @@ Always exclude:
 .terraform/
 .tfstate
 Any sensitive files via .gitignore
-
----
-
-### ✅ To Apply It:
-
-1. Run:
-   ```bash
-   nano README.md
-
-
-
-
-
-
-
-
-
-
-
-
-
