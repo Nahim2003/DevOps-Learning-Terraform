@@ -54,6 +54,7 @@ terraform apply
 Destroy the infrastructure (when done):
 terraform destroy
 
+
 ## 📄 Notes
 
 The project uses cloud-init.yaml to automate WordPress setup upon VM launch.
