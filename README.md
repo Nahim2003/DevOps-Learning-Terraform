@@ -4,16 +4,17 @@ This project demonstrates how to provision and configure a WordPress instance us
 
 ---
 
-## 📦 Project Structure
+## 🗂️ File Breakdown
 
-wordpress-terraform/
-├── main.tf # Main infrastructure definition
-├── variables.tf # Input variables
-├── outputs.tf # Output values
-├── terraform.tfstate # Terraform state file (not versioned)
-├── terraform.tfstate.backup
-├── cloud-init.yaml # Instance initialization script for WordPress
-└── .gitignore # Files/folders excluded from version control
+| File                        | Description                                      |
+|----------------------------|--------------------------------------------------|
+| `main.tf`                  | 🛠️  Main Terraform configuration file            |
+| `variables.tf`             | 📥  Input variables for customization            |
+| `outputs.tf`               | 📤  Outputs returned after applying resources    |
+| `cloud-init.yaml`          | ⚙️  Script to install/configure WordPress        |
+| `.gitignore`               | 🚫  Prevents versioning of temp or sensitive files |
+| `terraform.tfstate`        | 📄  Local Terraform state (do not version)       |
+| `terraform.tfstate.backup` | 🔄  Backup of last known state                   |
 
 
 > ⚠️ `.terraform/` is excluded to avoid pushing large provider binaries. Terraform will re
