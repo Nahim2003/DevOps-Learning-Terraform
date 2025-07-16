@@ -51,20 +51,44 @@ Apply the infrastructure:
 terraform apply
 Destroy the infrastructure (when done):
 terraform destroy
-📄 Notes
+
+## 📄 Notes
 
 The project uses cloud-init.yaml to automate WordPress setup upon VM launch.
 Terraform state files are stored locally and should not be committed.
 Variables can be customized in variables.tf or through a terraform.tfvars file.
-📚 Learning Goals
+
+## 📚  Learning Goals
 
 Practice deploying infrastructure with Terraform
 Automate WordPress installation using cloud-init
 Understand the use of variables, outputs, and modular Terraform code
-🔒 Security Considerations
+
+## 🔒 Security Considerations
 
 Secrets and credentials should never be hardcoded
 Always exclude:
 .terraform/
 .tfstate
 Any sensitive files via .gitignore
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
