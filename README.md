@@ -13,10 +13,11 @@ wordpress-terraform/
 ├── terraform.tfstate # Terraform state file (not versioned)
 ├── terraform.tfstate.backup
 ├── cloud-init.yaml # Instance initialization script for WordPress
-├── .gitignore # Files/folders excluded from version control
+└── .gitignore # Files/folders excluded from version control
 
 
-> ⚠️ `.terraform/` is excluded to avoid pushing large provider binaries. Terraform will re-download them as needed.
+> ⚠️ `.terraform/` is excluded to avoid pushing large provider binaries. Terraform will re
+
 
 ---
 
