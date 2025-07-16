@@ -36,3 +36,25 @@ wordpress-terraform/
 1. **Initialize the Terraform working directory:**
    ```bash
    terraform init
+
+2. **Review the plan:**
+   ```bash
+   terraform plan
+Apply the infrastructure:
+terraform apply
+Destroy (when done):
+terraform destroy
+📄 Notes
+
+The project uses cloud-init.yaml to automate WordPress setup upon VM launch.
+Terraform state files are stored locally and not recommended to be committed.
+Variables can be customized in variables.tf or via a terraform.tfvars file.
+📚 Learning Goals
+
+Practice deploying infrastructure with Terraform
+Automate WordPress installation using cloud-init
+Understand the use of variables, outputs, and modular Terraform code
+🔒 Security Considerations
+
+Secrets and credentials should never be hardcoded.
+Always exclude .terraform/, .tfstate, and any sensitive files via .gitignore.
