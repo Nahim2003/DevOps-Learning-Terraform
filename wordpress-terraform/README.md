@@ -17,7 +17,7 @@ This project demonstrates how to provision and configure a WordPress instance us
 | `terraform.tfstate.backup` | 🔄  Backup of last known state                   |
 
 
-> ⚠️ `.terraform/` is excluded to avoid pushing large provider binaries. Terraform will re
+> ⚠️ `.terraform/` is excluded to avoid pushing large provider binaries. Terraform will re-download them as needed.
 
 
 ---
