@@ -1,0 +1,38 @@
+# WordPress Deployment with Terraform
+
+This project demonstrates how to provision and configure a WordPress instance using **Terraform** and **cloud-init**. It is part of my DevOps learning journey and aims to showcase infrastructure as code (IaC) best practices.
+
+## 📦 Project Structure
+
+wordpress-terraform/
+├── main.tf # Main infrastructure definition
+├── variables.tf # Input variables
+├── outputs.tf # Output values
+├── terraform.tfstate # Terraform state file (not versioned)
+├── terraform.tfstate.backup
+├── cloud-init.yaml # Instance initialization script for WordPress
+├── .gitignore # Files/folders excluded from version control
+
+
+> ⚠️ The `.terraform/` directory is excluded to avoid pushing large provider binaries. Terraform will re-download them as needed.
+
+## 🚀 What It Does
+
+- Provisions infrastructure (e.g., EC2 instance, security groups, networking) on a cloud provider (typically AWS).
+- Boots the instance with `cloud-init` to install and configure:
+  - Apache/Nginx
+  - PHP
+  - MySQL (local or remote)
+  - WordPress
+
+## 🛠 Prerequisites
+
+- [Terraform](https://www.terraform.io/downloads.html)
+- AWS CLI configured or cloud provider credentials set up
+- SSH key for server access (if applicable)
+
+## 🔧 Usage
+
+1. **Initialize the Terraform working directory:**
+   ```bash
+   terraform init
