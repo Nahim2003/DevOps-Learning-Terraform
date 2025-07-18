@@ -13,6 +13,8 @@ DevOps-Learning-Terraform/
 └── README.md                  # Project overview (this file)
 🚀 Projects
 
+-----------------------------
+
 ✅ ec2-cloudinit-terraform
 A simple Terraform project to:
 
